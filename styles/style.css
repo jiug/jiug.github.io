@@ -1,0 +1,35 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+body section {
+  max-width: 100%;
+  margin: auto;
+}
+body section h2 {
+  text-align: center;
+}
+body section div {
+  width: auto;
+  margin: auto;
+  text-align: left;
+}
+body section div ul {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+body section div img {
+  max-width: 300px;
+}
+body section .wrapper {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body section .wrapper .project {
+  position: relative;
+  width: 300px;
+  margin: 20px 50px;
+}/*# sourceMappingURL=style.css.map */
