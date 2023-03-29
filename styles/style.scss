@@ -1,6 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-
+    max-width: 80%;
+    margin: auto;
     section{
     max-width: 100%;
     margin: auto;
@@ -9,7 +10,7 @@ body {
             text-align: center;
         }
 
-        
+
         div{
             width: auto;
             margin: auto;
@@ -18,7 +19,6 @@ body {
 
             ul{
                 width:fit-content;
-                margin: auto;
             }
 
             img{
@@ -28,7 +28,7 @@ body {
 
         .wrapper{
             display: flex;
-            width: 50%;
+            width: 80%;
             margin: auto;
             flex-wrap: wrap;
             justify-content: center;

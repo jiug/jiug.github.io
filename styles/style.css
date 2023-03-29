@@ -1,5 +1,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
+  max-width: 80%;
+  margin: auto;
 }
 body section {
   max-width: 100%;
@@ -16,14 +18,13 @@ body section div {
 body section div ul {
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
 }
 body section div img {
   max-width: 300px;
 }
 body section .wrapper {
   display: flex;
-  width: 50%;
+  width: 80%;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
