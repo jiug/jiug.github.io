@@ -1,6 +1,5 @@
-#intro{
+.intro{
     height: 100vh;
-    
     
     .intro-body{    
         display: flex;
@@ -8,7 +7,7 @@
         margin-top: 25vh;
 
         p{
-        margin: 0;
+            margin: 0;
         }
     }
 
@@ -22,9 +21,5 @@
     }
 
 
-    @media (max-width: 900px) {
-        .intro-body {
-            flex-wrap: wrap;
-        }
-    }
+   
 }

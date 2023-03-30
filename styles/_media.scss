@@ -1,0 +1,32 @@
+@media screen and (max-width: 900px){
+    
+    .intro {
+        
+        .intro-body{
+            flex-wrap: wrap;
+            margin: 5vh auto;
+        }
+
+        .intro-item{
+            margin-top: 5vh ;
+            max-width: 60vw;
+        }
+
+        img{
+            max-width: 60%;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+
+    .projects{
+        
+        .wrapper {
+
+            .project-card {
+                margin:auto;
+            }
+        }
+        
+    }
+}

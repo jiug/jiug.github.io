@@ -4,24 +4,23 @@
     font-weight: 600;
 }
 
-
 body {
     font-family: 'Courier New', Courier, monospace;
     max-width: 80%;
     margin: auto;
+
     section{
-    max-width: 100%;
-    margin: auto;
+        max-width: 100%;
+        margin: auto;
+
         h2{
             text-align: center;
         }
-
 
         div{
             width: auto;
             margin: auto;
             text-align: left;
-
 
             ul{
                 width:fit-content;
@@ -34,5 +33,5 @@ body {
 @import "./intro";
 @import "./projects";
 
-
+@import "./media";
 

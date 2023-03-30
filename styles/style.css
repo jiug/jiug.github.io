@@ -20,38 +20,32 @@ body section div ul {
   width: fit-content;
 }
 
-#intro {
+.intro {
   height: 100vh;
 }
-#intro .intro-body {
+.intro .intro-body {
   display: flex;
   width: 60vw;
   margin-top: 25vh;
 }
-#intro .intro-body p {
+.intro .intro-body p {
   margin: 0;
 }
-#intro .myname, #intro .mytitle, #intro .myinterest {
+.intro .myname, .intro .mytitle, .intro .myinterest {
   font-size: 3.5em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
-#intro img {
+.intro img {
   max-width: 300px;
   border-radius: 100px;
 }
-@media (max-width: 900px) {
-  #intro .intro-body {
-    flex-wrap: wrap;
-  }
-}
 
 #projects {
-  height: 100vh;
+  min-height: 100vh;
 }
 #projects .wrapper {
   display: flex;
-  width: 80%;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,4 +70,23 @@ body section div ul {
 #projects .wrapper .project-card:hover {
   background-color: #bbb;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .intro .intro-body {
+    flex-wrap: wrap;
+    margin: 5vh auto;
+  }
+  .intro .intro-item {
+    margin-top: 5vh;
+    max-width: 60vw;
+  }
+  .intro img {
+    max-width: 60%;
+    display: block;
+    margin: 20px auto;
+  }
+  .projects .wrapper .project-card {
+    margin: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
