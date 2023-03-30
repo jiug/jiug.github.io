@@ -1,0 +1,38 @@
+#projects{
+    height: 100vh;
+    .wrapper{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+
+        .project-card{
+            position: relative;
+            width: 300px;
+            margin: 20px 50px;
+            // border: solid 1px;
+            // border-radius: 8px;
+        
+            .card-header{
+                text-align: center;
+                @include highlight();
+                font-size: 20px;
+                border-bottom: solid 2px;
+                padding: 0.5em 1.5em;
+            }
+            
+            .card-body{
+                padding: 0.5em 1.5em;
+            }
+
+        }
+
+        .project-card:hover{
+            background-color: #bbb ;
+            border-radius: 15px;
+
+        }
+    }
+}

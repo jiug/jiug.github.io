@@ -1,0 +1,30 @@
+#intro{
+    height: 100vh;
+    
+    
+    .intro-body{    
+        display: flex;
+        width: 60vw;
+        margin-top: 25vh;
+
+        p{
+        margin: 0;
+        }
+    }
+
+    .myname, .mytitle, .myinterest{
+        @include highlight();
+    }
+
+    img{
+        max-width: 300px;
+        border-radius: 100px;
+    }
+
+
+    @media (max-width: 900px) {
+        .intro-body {
+            flex-wrap: wrap;
+        }
+    }
+}

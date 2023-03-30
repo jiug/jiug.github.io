@@ -9,75 +9,87 @@
     <header></header>
     <main>
       
-      <section>
-        <div class="section-head">
-          <h2>Intro</h2>
-        </div>
+      <section id="intro">
+        <div class="intro-body">
+          <div>
+            <p>Hello, I'm</p>
+            <p><span class="myname">Hugo</span></p>
+            <p> a </p>
+            <p><span class="mytitle">web developer</span> </p>
+            <p>with interest in </p>
+            <p><span class="myinterest">music</span></p>
+            <p> and </p>
+            <p><span class="myinterest">generative art</span></p>
+          </div>
 
-        <div>
-          <p>Hello, I'm Hugo, a web developer with interest in generative art</p>
+          <div>
+            <img src="./images/mi_cara_1.jpg" alt="a picture of me smiling">
+          </div>
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <div class="section-head">
           <h2>Projects</h2>
         </div>
 
         <div class="wrapper">
-          <div class="project">
-            <h3>
-              Olmo 雨果
-            </h3>
-            <div>
-              <a href="https://www.olmomusic.co" target="_blank"><img src="./images/olmo-web-front.png" alt="olmo website homepage"></a>
+          <div class="project-card">
+            <div class="card-header">
+              Olmo 雨果 website
             </div>
-            <p>Online presence for my musical alter-ego</p>
-            <ul>
-              <li>html</li>
-              <li>css</li>
-            </ul>
+            <div class="card-body">
+              <p>Online presence for my musical alter-ego</p>
+
+              <ul>
+                <li>html</li>
+                <li>css</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="project">
-            <h3>
-              @_blipblopdraws_
-            </h3>
-            <div>
-              <a href="https://www.instagram.com/_blipblopdraws_/" target="_blank"><img src="./images/blipblopdraws-front.png" alt=""></a>
+          <div class="project-card">
+            <div class="card-header">
+                @_blipblopdraws_
             </div>
-            <p>Exploration of generative patterns</p>
-            <ul>
-              <li>JavaScript</li>
-              <li>canvas-sketch</li>
-            </ul>
+            <div class="card-body">
+              <p>Exploration of generative patterns</p>
+              <ul>
+                <li>JavaScript</li>
+                <li>canvas-sketch</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="project">
-            <h3>
-              Processing sketches
-            </h3>
-            <p>Collection of Processing sketches both in Python and Java</p>
+          <div class="project-card">
+            <div class="card-header">
+                Processing sketches
+            </div>
+            <div class="card-body">
+              <p>Collection of Processing sketches both in Python and Java</p>
             <ul>
               <li>Python</li>
               <li>Java</li>
               <li>Processing</li>
             </ul>
+            </div>
           </div>
 
-          <div class="project">
-            <h3>
-              PureData generative patches
-            </h3>
-            <p>Generative synthesis patches</p>
+          <div class="project-card">
+            <div class="card-header">
+                PureData patches
+            </div>
+            <div class="card-body">
+              <p>Generative sound synthesis patches</p>
             <ul>
               <li>PureData</li>
             </ul>
+            </div>
           </div>
         </div>
       </section>
       
-      <section>
+      <section id="learning">
         <div class="section-head">
           <h2>Currently Learning</h2>
         </div>
@@ -94,7 +106,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="certifications">
         <div class="section-head">
           <h2>Certifications</h2>
         </div>
@@ -124,12 +136,14 @@
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <div class="section-head">
           <h2>Contact</h2>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      Made by <a href="https://github.com/jiug">me</a> 
+    </footer>
   </body>
 </html>
