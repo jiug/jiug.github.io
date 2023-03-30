@@ -11,8 +11,22 @@
         }
     }
 
-    .myname, .mytitle, .myinterest{
-        @include highlight();
+    .myname, .mytitle, .myinterest1, .myinterest2 {
+        @include highlight(3.5em);
+        margin: -7px 0 0 0 !important;
+    }
+
+    .mytitle:hover {
+        color: $web-color; 
+    }
+
+    .myinterest1:hover {
+        color: $music-color;
+    
+    }
+
+    .myinterest2:hover {
+        color: $art-color;
     }
 
     img{

@@ -16,8 +16,7 @@
         
             .card-header{
                 text-align: center;
-                @include highlight();
-                font-size: 20px;
+                @include highlight(20px);
                 border-bottom: solid 2px;
                 padding: 0.5em 1.5em;
             }

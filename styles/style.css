@@ -31,10 +31,20 @@ body section div ul {
 .intro .intro-body p {
   margin: 0;
 }
-.intro .myname, .intro .mytitle, .intro .myinterest {
+.intro .myname, .intro .mytitle, .intro .myinterest1, .intro .myinterest2 {
   font-size: 3.5em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  margin: -7px 0 0 0 !important;
+}
+.intro .mytitle:hover {
+  color: #00626F;
+}
+.intro .myinterest1:hover {
+  color: #238F3B;
+}
+.intro .myinterest2:hover {
+  color: #ad8217;
 }
 .intro img {
   max-width: 300px;
@@ -57,10 +67,9 @@ body section div ul {
 }
 #projects .wrapper .project-card .card-header {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 20px;
   border-bottom: solid 2px;
   padding: 0.5em 1.5em;
 }
@@ -72,10 +81,19 @@ body section div ul {
   border-radius: 15px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 720px) {
+  .intro {
+    display: grid;
+    align-items: center;
+  }
   .intro .intro-body {
     flex-wrap: wrap;
-    margin: 5vh auto;
+    margin: auto;
+  }
+  .intro .intro-body .myname, .intro .intro-body .mytitle, .intro .intro-body .myinterest1, .intro .intro-body .myinterest2 {
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
   }
   .intro .intro-item {
     margin-top: 5vh;
@@ -87,6 +105,6 @@ body section div ul {
     margin: 20px auto;
   }
   .projects .wrapper .project-card {
-    margin: auto;
+    margin: 1em auto !important;
   }
 }/*# sourceMappingURL=style.css.map */

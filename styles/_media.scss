@@ -1,10 +1,16 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 720px){
     
     .intro {
-        
+        display:grid;
+        align-items: center;
+
         .intro-body{
             flex-wrap: wrap;
-            margin: 5vh auto;
+            margin: auto;
+           
+            .myname, .mytitle, .myinterest1, .myinterest2{
+                @include highlight(3em);
+            }
         }
 
         .intro-item{
@@ -24,7 +30,7 @@
         .wrapper {
 
             .project-card {
-                margin:auto;
+                margin: 1em auto !important;
             }
         }
         
