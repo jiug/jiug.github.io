@@ -1,12 +1,12 @@
 #projects{
     min-height: 100vh;
+
     .wrapper{
         display: flex;
         margin: auto;
         flex-wrap: wrap;
         justify-content: center;
     
-
         .project-card{
             position: relative;
             width: 300px;
@@ -24,13 +24,11 @@
             .card-body{
                 padding: 0.5em 1.5em;
             }
-
         }
 
         .project-card:hover{
             background-color: #bbb ;
             border-radius: 15px;
-
         }
     }
 }
