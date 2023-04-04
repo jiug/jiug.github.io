@@ -19,6 +19,9 @@ body section div ul {
   width: -moz-fit-content;
   width: fit-content;
 }
+body .chinese {
+  font-size: 1rem;
+}
 
 .intro {
   height: 100vh;
@@ -38,13 +41,13 @@ body section div ul {
   margin: -7px 0 0 0 !important;
 }
 .intro .mytitle:hover {
-  color: #00626F;
+  color: rgb(0, 99, 112);
 }
 .intro .myinterest1:hover {
-  color: #238F3B;
+  color: rgb(36, 143, 59);
 }
 .intro .myinterest2:hover {
-  color: #ad8217;
+  color: rgb(173, 131, 23);
 }
 .intro img {
   max-width: 300px;
@@ -60,12 +63,12 @@ body section div ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-#projects .wrapper .project-card {
+#projects .wrapper .art, #projects .wrapper .music, #projects .wrapper .web {
   position: relative;
   width: 300px;
   margin: 20px 50px;
 }
-#projects .wrapper .project-card .card-header {
+#projects .wrapper .art .card-header, #projects .wrapper .music .card-header, #projects .wrapper .web .card-header {
   text-align: center;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -73,19 +76,19 @@ body section div ul {
   border-bottom: solid 2px;
   padding: 0.5em 1.5em;
 }
-#projects .wrapper .project-card .card-body {
+#projects .wrapper .art .card-body, #projects .wrapper .music .card-body, #projects .wrapper .web .card-body {
   padding: 0.5em 1.5em;
 }
 #projects .wrapper .art:hover {
-  background-color: #ad8217;
+  background-color: rgba(173, 131, 23, 0.4);
   border-radius: 15px;
 }
 #projects .wrapper .web:hover {
-  background-color: #00626F;
+  background-color: rgba(0, 99, 112, 0.4);
   border-radius: 15px;
 }
 #projects .wrapper .music:hover {
-  background-color: #238F3B;
+  background-color: rgba(36, 143, 59, 0.4);
   border-radius: 15px;
 }
 

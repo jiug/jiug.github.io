@@ -7,7 +7,7 @@
         flex-wrap: wrap;
         justify-content: center;
     
-        .project-card{
+        .art, .music, .web{
             position: relative;
             width: 300px;
             margin: 20px 50px;
@@ -27,17 +27,17 @@
         }
 
         .art:hover{
-            background-color: $art-color ;
+            background-color: $art-color-bg;
             border-radius: 15px;
         }
 
         .web:hover{
-            background-color: $web-color;
+            background-color: $web-color-bg;
             border-radius: 15px;
         }
 
         .music:hover{
-            background-color: $music-color;
+            background-color: $music-color-bg;
             border-radius: 15px;
         }
     }
