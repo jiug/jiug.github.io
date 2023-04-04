@@ -76,8 +76,16 @@ body section div ul {
 #projects .wrapper .project-card .card-body {
   padding: 0.5em 1.5em;
 }
-#projects .wrapper .project-card:hover {
-  background-color: #bbb;
+#projects .wrapper .art:hover {
+  background-color: #ad8217;
+  border-radius: 15px;
+}
+#projects .wrapper .web:hover {
+  background-color: #00626F;
+  border-radius: 15px;
+}
+#projects .wrapper .music:hover {
+  background-color: #238F3B;
   border-radius: 15px;
 }
 

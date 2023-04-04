@@ -26,8 +26,18 @@
             }
         }
 
-        .project-card:hover{
-            background-color: #bbb ;
+        .art:hover{
+            background-color: $art-color ;
+            border-radius: 15px;
+        }
+
+        .web:hover{
+            background-color: $web-color;
+            border-radius: 15px;
+        }
+
+        .music:hover{
+            background-color: $music-color;
             border-radius: 15px;
         }
     }
