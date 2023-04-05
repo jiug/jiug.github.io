@@ -4,7 +4,22 @@
     font-weight: 600;
 }
 
+@mixin card($color) {
+    background-color: $color;
+    border-radius: 15px;
+    transition: ease-in-out 0.5s;
+}
+
+@mixin scroll(){
+    margin-top: 20vh; 
+    padding-top: 5vh;
+}
+   
 @import "./variables";
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -14,7 +29,6 @@ body {
     section{
         max-width: 100%;
         margin: auto;
-
         h2{
             text-align: center;
         }
@@ -35,9 +49,43 @@ body {
     }
 }
 
+.section-head{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    h2 {
+        font-size: 3rem;
+    }
+}
 
+footer{
+
+    p{
+        width: fit-content;
+        margin: auto;
+        font-size: 0.7rem;
+    }
+    
+}
+ 
+a{
+    color: $text-color;
+    text-decoration: none;
+}
+
+a:visited{
+    color: $text-color;
+}
+
+a:hover{
+    color: $web-color;
+}
+
+
+@import "./navbar";
 @import "./intro";
 @import "./projects";
+@import "./skills";
+@import "./contact";
 
 @import "./media";
 

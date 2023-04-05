@@ -1,0 +1,51 @@
+@mixin input-field(){
+    margin: 20px;
+    border: 0;
+    border-radius: 4px;
+    width: 300px;
+    padding: 12px;
+    display: inline-block;
+    resize: none;
+}
+
+#contact{
+    background-color: rgba(0, 0, 0,0);
+    height: 100vh;
+
+    @include scroll();
+
+    .section-head {
+        margin-top: 130px;
+    }
+
+    .call-to-action {
+
+        form {
+            margin: 2rem auto 5rem auto;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            padding: 3rem;
+        
+        
+            input {
+                @include input-field();
+            }
+        
+            textarea {
+                @include input-field();
+                height: 70px;
+            }
+            p {
+                margin-bottom: -15px;
+            }
+        
+            button {
+                border-radius: 8px;
+            }        
+        }
+    }
+        
+}

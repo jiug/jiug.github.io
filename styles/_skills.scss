@@ -1,0 +1,56 @@
+.skills{
+    @include scroll();
+
+    justify-content: left;
+    min-height: 100vh;
+    text-align: left;
+    background-image: url("../images/skills-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom right;
+    background-position-x: 300px;
+    width: 70%;
+
+   .section-head{
+
+        h2{
+            text-align: left;
+        }
+   }
+
+   .certifications, .learning{
+        margin: 20px 0 80px 0 ;
+   }
+
+   ul{
+        background-color: rgba(255, 255, 255,0.8);
+        li{
+            margin: 10px 10px 10px 20px;
+
+            a {
+                padding-left: 10px;
+            }
+        }
+
+        .py-mark::marker{
+            content: url("../images/py-icon.png");
+            height: 15px;
+        }
+
+        .js-mark::marker{
+            content: url("../images/js-icon.png");
+        }
+
+        .brain-mark::marker{
+            content: url("../images/brain-icon.png");
+        }
+
+        .web-mark::marker{
+            content: url("../images/html-icon.png");
+        }
+
+        .r-mark::marker{
+            content: url("../images/r-icon.png");
+        }
+   }
+}

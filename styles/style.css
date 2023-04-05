@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
   max-width: 80%;
@@ -23,8 +27,89 @@ body .chinese {
   font-size: 1rem;
 }
 
+.section-head {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-head h2 {
+  font-size: 3rem;
+}
+
+footer p {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 0.7rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: rgb(0, 99, 112);
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);*/
+  z-index: 200;
+}
+
+li::marker {
+  content: "";
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+.nav-list a {
+  display: block;
+  font-size: 1rem;
+}
+
+.nav-list-zh {
+  display: flex;
+  margin-right: 2rem;
+}
+.nav-list-zh a {
+  display: block;
+  font-size: 4rem;
+  padding: 0 1rem 0 1rem;
+}
+
+@media (max-width: 40em) {
+  .nav {
+    justify-content: center;
+  }
+  .nav-list {
+    margin: 0 1rem;
+  }
+  .nav-list a {
+    font-size: 3.1rem;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  }
+  .nav-list-zh {
+    margin: 0 1rem;
+  }
+  .nav-list-zh a {
+    font-size: 2.5rem;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  }
+}
 .intro {
-  height: 100vh;
+  min-height: 100vh;
 }
 .intro .intro-body {
   display: flex;
@@ -56,12 +141,22 @@ body .chinese {
 
 #projects {
   min-height: 100vh;
+  margin-top: 20vh;
+  padding-top: 5vh;
 }
 #projects .wrapper {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: center;
+}
+#projects .wrapper a {
+  text-decoration: none;
+  color: black;
+}
+#projects .wrapper a:visited {
+  text-decoration: none;
+  color: black;
 }
 #projects .wrapper .art, #projects .wrapper .music, #projects .wrapper .web {
   position: relative;
@@ -82,17 +177,112 @@ body .chinese {
 #projects .wrapper .art:hover {
   background-color: rgba(173, 131, 23, 0.4);
   border-radius: 15px;
+  transition: ease-in-out 0.5s;
 }
 #projects .wrapper .web:hover {
   background-color: rgba(0, 99, 112, 0.4);
   border-radius: 15px;
+  transition: ease-in-out 0.5s;
 }
 #projects .wrapper .music:hover {
   background-color: rgba(36, 143, 59, 0.4);
   border-radius: 15px;
+  transition: ease-in-out 0.5s;
+}
+
+.skills {
+  margin-top: 20vh;
+  padding-top: 5vh;
+  justify-content: left;
+  min-height: 100vh;
+  text-align: left;
+  background-image: url("../images/skills-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: bottom right;
+  background-position-x: 300px;
+  width: 70%;
+}
+.skills .section-head h2 {
+  text-align: left;
+}
+.skills .certifications, .skills .learning {
+  margin: 20px 0 80px 0;
+}
+.skills ul {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.skills ul li {
+  margin: 10px 10px 10px 20px;
+}
+.skills ul li a {
+  padding-left: 10px;
+}
+.skills ul .py-mark::marker {
+  content: url("../images/py-icon.png");
+  height: 15px;
+}
+.skills ul .js-mark::marker {
+  content: url("../images/js-icon.png");
+}
+.skills ul .brain-mark::marker {
+  content: url("../images/brain-icon.png");
+}
+.skills ul .web-mark::marker {
+  content: url("../images/html-icon.png");
+}
+.skills ul .r-mark::marker {
+  content: url("../images/r-icon.png");
+}
+
+#contact {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  margin-top: 20vh;
+  padding-top: 5vh;
+}
+#contact .section-head {
+  margin-top: 130px;
+}
+#contact .call-to-action form {
+  margin: 2rem auto 5rem auto;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 3rem;
+}
+#contact .call-to-action form input {
+  margin: 20px;
+  border: 0;
+  border-radius: 4px;
+  width: 300px;
+  padding: 12px;
+  display: inline-block;
+  resize: none;
+}
+#contact .call-to-action form textarea {
+  margin: 20px;
+  border: 0;
+  border-radius: 4px;
+  width: 300px;
+  padding: 12px;
+  display: inline-block;
+  resize: none;
+  height: 70px;
+}
+#contact .call-to-action form p {
+  margin-bottom: -15px;
+}
+#contact .call-to-action form button {
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 720px) {
+  h2 {
+    font-size: 2rem !important;
+  }
   .intro {
     display: grid;
     align-items: center;
@@ -117,5 +307,9 @@ body .chinese {
   }
   .projects .wrapper .project-card {
     margin: 1em auto !important;
+  }
+  .skills {
+    width: 100%;
+    background-image: none;
   }
 }/*# sourceMappingURL=style.css.map */

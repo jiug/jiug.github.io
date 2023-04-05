@@ -1,5 +1,7 @@
 @media screen and (max-width: 720px){
-    
+    h2{
+        font-size: 2rem !important;
+    }
     .intro {
         display:grid;
         align-items: center;
@@ -34,5 +36,10 @@
             }
         }
         
+    }
+
+    .skills{
+        width: 100%;
+        background-image: none;
     }
 }

@@ -1,12 +1,23 @@
 #projects{
     min-height: 100vh;
+    @include scroll();
 
     .wrapper{
         display: flex;
         margin: auto;
         flex-wrap: wrap;
         justify-content: center;
-    
+        
+        a {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: $text-color;
+        }
+        
         .art, .music, .web{
             position: relative;
             width: 300px;
@@ -27,18 +38,16 @@
         }
 
         .art:hover{
-            background-color: $art-color-bg;
-            border-radius: 15px;
+            @include card($art-color-bg);
+
         }
 
         .web:hover{
-            background-color: $web-color-bg;
-            border-radius: 15px;
+            @include card($web-color-bg);
         }
 
         .music:hover{
-            background-color: $music-color-bg;
-            border-radius: 15px;
+            @include card($music-color-bg);
         }
     }
 }
