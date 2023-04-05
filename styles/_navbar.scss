@@ -8,11 +8,13 @@
     width: 100%;
     /*box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);*/
     z-index: 200;
+
+    li::marker{
+        content: "";
+    }
 }
 
-li::marker{
-    content: "";
-}
+
   
 .nav-list {
     display: flex;
@@ -24,18 +26,7 @@ li::marker{
     }
 }
 
-.nav-list-zh {
-    display: flex;
-    margin-right: 2rem;
 
-    a {
-        display: block;
-        font-size: 4rem;
-        padding: 0 1rem 0 1rem;
-    }
-
-    
-}
 
 
 @media (max-width: 40em) {
@@ -44,22 +35,12 @@ li::marker{
     }
   
     .nav-list {
-        margin: 0 1rem;
 
         a{
-            font-size: 3.1rem;
-            padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+            font-size: 1rem;
         }
     }
 
-    .nav-list-zh {
-        margin: 0 1rem;
-
-        a{
-            font-size: 2.5rem;
-            padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-        }
-    }
 
      
 }
