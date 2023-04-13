@@ -215,7 +215,7 @@ a:hover {
 
 #contact {
   background-color: rgba(0, 0, 0, 0);
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 20vh;
   padding-top: 5vh;
 }
