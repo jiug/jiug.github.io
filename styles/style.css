@@ -212,6 +212,9 @@ a:hover {
 .skills ul .r-mark::marker {
   content: url("../images/r-icon.png");
 }
+.skills ul .react-mark::marker {
+  content: url("../images/react-icon.png");
+}
 
 #contact {
   background-color: rgba(0, 0, 0, 0);
